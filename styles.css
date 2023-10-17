@@ -23,8 +23,8 @@
 }
 
 body {
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: #2e364a;
+    color: #fff;
 }
 
 
@@ -75,13 +75,7 @@ body {
 
 
 
-/* nav{
-    position: fixed;
-     display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 15px 15%;} */
+
 
    nav{ 
     display: flex;
@@ -521,7 +515,7 @@ body {
     @media (max-width: 400px) {
         .col-2 img{
             width: 90%;
-            margin-top: 9px;
+            margin-top: -59px;
     
             margin-left: 55px;
         }
@@ -533,7 +527,7 @@ body {
         }
         .col-2 img{
             width: 90%;
-            margin-top: 9px;
+            margin-top: -51px;
     
             margin-left: 35px;
         }
@@ -542,3 +536,7 @@ body {
             bottom: 4%;
     }
     }
+
+
+    /* hire me */
+    
