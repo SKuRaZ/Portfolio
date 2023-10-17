@@ -382,7 +382,7 @@ body {
 @media (max-width: 370px) {
 
     .col-2 img{
-        width: 100%;
+        width: 80%;
         margin-top: -0px;
 
         margin-left: 40px;
@@ -513,11 +513,19 @@ body {
     }
 
     @media (max-width: 400px) {
-        .col-2 img{
-            width: 90%;
-            margin-top: -59px;
-    
-            margin-left: 55px;
+
+            .col-2 img {
+                width: 95%;
+                margin-top: -27px;
+                margin-left: 48px;
+            }
+    }
+    @media (max-width: 378px) {
+
+        .col-2 img {
+            width: 80%;
+            margin-top: -52px;
+            margin-left: 63px;
         }
     }
     @media (max-width: 350px) {
@@ -526,7 +534,7 @@ body {
 
         }
         .col-2 img{
-            width: 90%;
+            width: 80%;
             margin-top: -51px;
     
             margin-left: 35px;
