@@ -582,6 +582,12 @@ h3 span-2.stop-blinking::before {
     }
     }
 
+    @media (max-width: 1280px){
+    .text-box h1 {
+        font-size: 146px;
+        line-height: 140px;
+    }
+}
 
     /* hire me */
     
