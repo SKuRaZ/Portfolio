@@ -87,7 +87,7 @@
 }
 
 .fade-up {
-   animation: fadeUp 1s ease forwards;
+   animation: fadeUp 2s ease forwards;
    opacity: 0;
    transform: translateY(50px);
  }
@@ -105,7 +105,7 @@
 
 
  .fade-right {
-   animation: fadeRight 1s ease forwards;
+   animation: fadeRight 2s ease forwards;
    opacity: 0;
    transform: translateX(-50px); /* Adjust to your desired initial position */
  }
