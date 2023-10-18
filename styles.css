@@ -49,7 +49,7 @@ body {
     top: -180px;
     transform: translateX(-50%);
     width: 400px;
-    z-index: -1F;
+    z-index: -1;
     opacity: 0.7;
 }
 
@@ -581,13 +581,6 @@ h3 span-2.stop-blinking::before {
             bottom: 4%;
     }
     }
-
-    @media (max-width: 1280px){
-    .text-box h1 {
-        font-size: 146px;
-        line-height: 140px;
-    }
-}
 
     /* hire me */
     
