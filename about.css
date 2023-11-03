@@ -56,21 +56,29 @@
     top: 15px;
     left: 15px;
     z-index: 1;
+    transition: all 0.3s; /* Add a transition for a smooth effect */
+
+
+}
+.imageSection:hover::after {
+    width: 105%;
+    height: 103%;
+    outline: 3px solid #787cb5;
+    top: -5px;
+    left: -8px;
 
 }
 
- .infoSection h1{
+.infoSection h1 {
     color: #dedce1;
     font-size: 30px;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 5px;
     position: relative;
-
 }
 
-
-.infoSection h1::before{
+.infoSection h1::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -78,17 +86,26 @@
     top: 110%;
     left: 0;
     background-color: #aaabb0;
+    transition: left 0.3s; /* Add transition for smooth animation */
+}
 
+.infoSection h1::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    top: calc(100% - 1px);
+    left: 0;
+    background-color: #787cb5;
+    transition: left 0.3s; /* Add transition for smooth animation */
 }
-.infoSection h1::after{
- content: ''; 
- position: absolute;
- width: 40%;
- height: 3px;
- top: calc(100% - 1px);
- left: 0;
- background-color: #787cb5;  
+
+
+.infoSection h1:hover::after {
+    left: 60%; /* Move the line to the right on hover */
 }
+
+
 
 
 .infoSection h2{
