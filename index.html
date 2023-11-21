@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="whyme.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="testi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- <a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a> -->
 <link rel="stylesheet" href="hireme.css">
@@ -38,6 +40,58 @@
 </style>
 </head>
 <body class="Pointer">
+    <div>
+        <audio src="On-My-Way.mp3" id="background" loop="" autoplay="true"></audio>
+        
+        <button-m id="icon-m" onclick="pause()" class="btn-m" type="button-m">
+            <i class="fa-solid fa-music"></i>
+        </button-m>
+        <button-m id="music" onclick="play()" class="btn-m" type="button-m">
+            <i class="fa-solid fa-music"></i>
+        </button-m>
+    </div>
+    <header class="header" id="header">
+        <nav-1 class="nav-1 container">
+
+        <img src="images/logo.png" class="nav__logo">
+        
+        <div class="nav__menu" id="nav-menu">
+            <ul-1 class="nav__list grid">
+        
+                <li class="nav__item">
+                    <a href="#home" class="nav__link"><i class="uil uil-estate nav__icon">Home</i></a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#services" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Services</a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#" class="nav__link"><i class="uil uil-scenery nav__icon">Portfolio</i></a>
+                </li>
+        
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact Me</a>
+                </li>
+            </ul-1>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+        </nav-1>
+        
+        </header>
     <section class="hero Pointer" id="home">
   
      <div id="canvas-container">
@@ -62,48 +116,7 @@
         </nav>
 
         <!-- mobile nav -->
-        <header class="header" id="header">
-            <nav-1 class="nav-1 container">
-    
-            <img src="images/logo.png" class="nav__logo">
-            
-            <div class="nav__menu" id="nav-menu">
-                <ul-1 class="nav__list grid">
-            
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link"><i class="uil uil-estate nav__icon">Home</i></a>
-                    </li>
-            
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
-                    </li>
-            
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
-                    </li>
-            
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Services</a>
-                    </li>
-            
-                    <li class="nav__item">
-                        <a href="#" class="nav__link"><i class="uil uil-scenery nav__icon">Portfolio</i></a>
-                    </li>
-            
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact Me</a>
-                    </li>
-                </ul-1>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-            </nav-1>
-            
-            </header>
+      
            
          <div class="row">
             <!-- <div class="cat">
@@ -158,6 +171,9 @@
                         </span>
                         <span class="BG-3"></span>
                        </button></a>
+
+
+                
             </div>
 
             </div>
@@ -203,6 +219,7 @@
     </div> 
 
 
+ 
 </section-1> 
 <!-- INFO SECTION ENDS -->
 
@@ -241,14 +258,14 @@
 </div> 
 </div>   
 <img src="images/about-bg.png" class="small">
-<!-- skills sections ends -->
-
 
 
 
 
 </section-1>
 <!-- End of about me -->
+<!-- skills sections ends -->
+
 
 
 
@@ -679,6 +696,23 @@
         navLink.forEach(n => n.addEventListener('click', linkAction));
     });
     </script>
+        <script type="text/javascript">
+            var bg = document.getElementById("background");
+            bg.volume = 0.05;
+            const music = document.getElementById("music");
+            const icon = document.getElementById("icon-m");
+    
+    function play() { 
+      bg.play();
+      icon.style.display = 'block';
+      music.style.display = 'none'; 
+    } 
+    function pause() { 
+      bg.pause();
+      icon.style.display = 'none';
+      music.style.display = 'block';  
+    } 
+        </script>
 <!-- for fadein -->
 <script src="script.js" defer></script>
 </body>

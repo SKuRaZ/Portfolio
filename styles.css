@@ -815,6 +815,10 @@ header{
     color: hsl(var(--hue-color),69%, 61%);
 }
 
+#canvas-container:hover {
+  pointer-events: none;
+}
+
 @media screen and (max-width: 767px) {
     .nav__menu{
         position: fixed;
@@ -1131,4 +1135,23 @@ color: hsl(var(--hue-color),57%, 53%);
 	transform: translateX(-50%);
 	border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
   }
-  
+  .btn-m {
+    background-color: transparent;
+    color: black;
+    border: none;
+    opacity: 0.3;
+    position: fixed;
+    top: 1px;
+    right: 26px;
+    font-size: 36px;
+    padding: 10px;
+}
+
+  #icon-m {
+    color: red;
+    opacity: 1;
+  }
+
+  #music {
+    display: none;
+  }
