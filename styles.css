@@ -1149,10 +1149,11 @@ color: hsl(var(--hue-color),57%, 53%);
 
 }
 
-  #icon-m {
-    color: red;
-    opacity: 1;
-  }
+#icon-m {
+  color: red;
+  opacity: 1;
+  cursor: pointer;
+}
 
   #music {
     display: none;
