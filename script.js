@@ -92,7 +92,6 @@ window.onload = function () {
 }
 // coding with nick
 
-
 var w = window.innerWidth,
     h = window.innerHeight,
     canvas = document.getElementById('test'),
@@ -132,9 +131,11 @@ function particles() {
 
   for(var i = 0; i < arc; i++) {
     var li = parts[i];
+    
     var distanceFactor = DistanceBetween(mouse, parts[i]);
-    var distanceFactor = Math.max(Math.min(15 - (distanceFactor / 10), 10), 1);
-    ctx.font = li.size * distanceFactor + 'px Arial';
+    var fontSizeMultiplier = window.innerWidth >= 668 ? Math.max(Math.min(15 - (distanceFactor / 10), 10), 1) : 1;
+
+    ctx.font = li.size * fontSizeMultiplier + 'px Arial';
     ctx.fillStyle = 'black';
 
     ctx.fillText(li.value, li.x, li.y);
@@ -176,5 +177,3 @@ function DistanceBetween(p1, p2) {
 
 create();
 particles();
-
-
