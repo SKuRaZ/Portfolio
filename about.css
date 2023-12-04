@@ -508,7 +508,8 @@ letter-spacing: 1px;
     text-align: center;
     position: relative;
     z-index: 5;
-    margin: 0 130px 35px 10px; /* Top, Right, Bottom, Left - Adjust these values individually for specific gap */
+    margin: 0 130px 35px 10px;
+    cursor: pointer; /* Top, Right, Bottom, Left - Adjust these values individually for specific gap */
 }
   
   .do_section .do_container .box .img-box {
@@ -647,6 +648,7 @@ letter-spacing: 1px;
     text-align: center;
     position: relative;
     z-index: 5;
+    cursor: pointer;
     /* margin: 0 130px 35px 10px; */
 }
   

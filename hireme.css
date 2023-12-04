@@ -93,7 +93,12 @@ span-5{
     }
 
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1000px){
+.right-image {
+    max-height: 20vh;
+}
+}
+@media screen and (max-width: 875px) {
     .section-5 {
         flex-direction: column; /* Move the image to the top */
         padding: 10px;

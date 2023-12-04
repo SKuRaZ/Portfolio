@@ -561,6 +561,12 @@ h3 span-2.stop-blinking::before {
     
     
 }
+@media (max-width: 1173px) {
+    nav ul li {
+        margin: 10px 20px;
+    }
+
+}
 @media (max-width: 1150px) {
         .text-box h1 {
             font-size: 166px;
@@ -568,6 +574,34 @@ h3 span-2.stop-blinking::before {
  
         }
     }
+
+    @media (max-width: 1060px) {
+        nav ul li {
+            margin: 10px 17px;
+        }
+    
+    }
+
+    @media (max-width: 1020px) {
+        .muji  {
+            font-size: 15px;
+        }
+    
+    }
+    @media (max-width: 993px) {
+        .muji  {
+            font-size: 14px;
+        }
+    
+    }
+    @media (max-width: 1020px) {
+        .muji  {
+            font-size: 15px;
+        }
+    
+    }
+
+
 @media (max-width: 968px) {
         .muji-1{
             display: none;
@@ -713,9 +747,14 @@ cursor2{
 
     .col-2 img {
         width: 79%;
-        margin-top: -3px;
+        margin-top: -12px;
         margin-left: 15px;
     }
+}
+.text-box a {
+
+    padding: 11px 7px;
+    margin-right: 9px;
 }
 @media (max-width: 370px) {
 
@@ -799,7 +838,7 @@ header{
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 3;
+    z-index: 9999999;
     background-color: #000;
 
 }
