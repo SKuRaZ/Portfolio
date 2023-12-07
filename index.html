@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,56 @@
     <link rel="stylesheet" href="pointer.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="btn.css">
-<link rel="stylesheet" href="mobile_nav.css">
+    <link rel="stylesheet" href="mobile_nav.css">
     <link rel="stylesheet" href="Services.css">
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="whyme.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="testi.css">
     <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
-<link rel="stylesheet" type="text/css" href="video.css"/>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="video.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
     <!-- <a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a> -->
-<link rel="stylesheet" href="hireme.css">
-<style>
-  
-  #canvas-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 0; /* Adjust the z-index to control the canvas display */
-    }
-/* 
+    <link rel="stylesheet" href="hireme.css">
+
+
+    <!-- fav -->
+    <link rel="icon" type="image/x-icon" href="images/fav.png">
+
+    <style>
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            /* Adjust the z-index to control the canvas display */
+        }
+
+        /* 
     #content {
       z-index: 0;
     } */
-</style>
+    </style>
 </head>
+
 <body class="Pointer">
     <div>
         <audio src="On-My-Way.mp3" id="background" loop="" autoplay="true"></audio>
-        
+
         <button-m id="icon-m" onclick="pause()" class="btn-m" type="button-m">
             <i class="fa-solid fa-music"></i>
         </button-m>
@@ -57,57 +69,61 @@
     <header class="header" id="header">
         <nav-1 class="nav-1 container">
 
-        <img src="images/logo.png" class="nav__logo">
-        
-        <div class="nav__menu" id="nav-menu">
-            <ul-1 class="nav__list grid">
-        
-                <!-- <li class="nav__item">
+            <img src="images/logo.png" class="nav__logo">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul-1 class="nav__list grid">
+
+                    <!-- <li class="nav__item">
                     <a href="#home" class="nav__link"><i class="uil uil-estate nav__icon">Home</i></a>
                 </li> -->
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="About.html" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
-                </li>
-        
-                <li class="nav__item">
-                    <a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
-                </li>
-        
-                <li class="nav__item">
-                    <a href="#services" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Services</a>
-                </li>
-        
-                <!-- <li class="nav__item">
+                    <li class="nav__item active">
+                        <a href="index.html" class="nav__link active"><i
+                                class="uil uil-estate nav__icon active"></i>Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="About.html" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="Testimonial.html" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Testimonial</a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="Services.html" class="nav__link"><i
+                                class="uil uil-briefcase-alt nav__icon"></i>Services</a>
+                    </li>
+
+                    <!-- <li class="nav__item">
                     <a href="#" class="nav__link"><i class="uil uil-scenery nav__icon">Portfolio</i></a>
                 </li> -->
-        
 
-                <li class="nav__item">
-                    <a href="portfolio.html" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact Me</a>
-                </li>
-            </ul-1>
-            <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
-        <div class="nav__btns">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
+
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link"><i
+                                class="uil uil-scenery nav__icon"></i>Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Contact.html" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact Me</a>
+                    </li>
+                </ul-1>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-        </div>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
         </nav-1>
-        
-        </header>
+
+    </header>
     <section class="hero Pointer" id="home">
-  
-     <div id="canvas-container">
-  <canvas id="test"></canvas>
-</div>
-<!-- 
+
+        <div id="canvas-container">
+            <canvas id="test"></canvas>
+        </div>
+        <!-- 
         <img src="images/triangle-top.png" class="triangle1">
         <img src="images/triangle-left.png" class="triangle2">
         <img src="images/circle.png" class="circle">
@@ -117,7 +133,7 @@
         <nav>
             <a href="index.html"><img src="images/logo.png" class="logo"></a>
             <ul class="muji">
-                <li ><a href="About.html">About</a></li>
+                <li><a href="About.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="Testimonial.html">Testimonial</a></li>
@@ -128,9 +144,9 @@
         </nav>
 
         <!-- mobile nav -->
-      
-           
-         <div class="row">
+
+
+        <div class="row">
 
 
             <div class="col-1">
@@ -138,93 +154,113 @@
                     <!-- <p>I'M</p> -->
                     <h1>S.KuRaZ</h1>
                     <h3>I'm a <span-2></span-2></h3>
-            
+
                     <div class="city content">
-                      <a href="">Explore My Portfolio <span> &#x27F6;</span></a>
-                      <a href="">Connect With Me <span> &#x27F6;</span></a>
-                      <span-7 style="font-family: 'Tilt Neon', sans-serif;">You Can Explore More About <br>My Portfolio And Experiences Here.</span-7>
+                        <a href="">Explore My Portfolio <span> &#x27F6;</span></a>
+                        <a href="">Connect With Me <span> &#x27F6;</span></a>
+                        <span-7 style="font-family: 'Tilt Neon', sans-serif;">You Can Explore More About <br>My
+                            Portfolio And Experiences Here.</span-7>
                     </div>
-                    </div>
+                </div>
 
-               <div class="social-icons content">
-                <a href="https://instagram.com/s.kuraz_7?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank">
-                <button class="Btn-2">
-                    <button class="Btn-2">
-                        <span class="svgContainer-2">
-                          <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                        </span>
-                        <span class="BG-2"></span>
-                       </button>
-                   </a>
-                   <a href="https://github.com/SKuRaZ" target="_blank">
-                    <button class="Btn-1">
-                        <span class="svgContainer">
-                          <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-                        </span>
-                        <span class="BG"></span>
-                       </button>
-                       </a>
-                <a href="" target="_blank">               
-                         <button class="Btn-3">
-                        <span class="svgContainer-3">
-                         <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" fill="red"></path> </svg>
-                        </span>
-                        <span class="BG-3"></span>
-                       </button></a>
+                <div class="social-icons content">
+                    <a href="https://instagram.com/s.kuraz_7?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank">
+                        <button class="Btn-2">
+                            <button class="Btn-2">
+                                <span class="svgContainer-2">
+                                    <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="BG-2"></span>
+                            </button>
+                    </a>
+                    <a href="https://github.com/SKuRaZ" target="_blank">
+                        <button class="Btn-1">
+                            <span class="svgContainer">
+                                <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="BG"></span>
+                        </button>
+                    </a>
+                    <a href="" target="_blank">
+                        <button class="Btn-3">
+                            <span class="svgContainer-3">
+                                <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                                        fill="red"></path>
+                                </svg>
+                            </span>
+                            <span class="BG-3"></span>
+                        </button></a>
 
 
-                
-            </div>
+
+                </div>
 
             </div>
             <div class="col-2">
                 <img src="images/man7.PNG" class="manop">
-                <img src="images/elements1.png" class="elements"> 
+                <img src="images/elements1.png" class="elements">
             </div>
         </div>
-    </div>
+        </div>
 
     </section>
-    
-        
+
+
     </div>
 
-<p class="paj">. <br> . </p>
-<div class="about_container about_container-1 animated">
-    <div class="about_contents">
-<!-- image section starts -->
-<section-1 class="imageSection wow fadeInUp" data-wow-delay="0.1s">
-    <img src="images/About-me.png">
-</section-1> 
-<!-- images section ends -->
-<!-- info section starts -->
-<section-1 class="infoSection animated wow ">
-    <h1 class="heartBeat"data-wow-delay="0.5s"><span-5>About</span-5> Me</h1>
-    <h2 class=" animated wow fadeInUp">I specialize in professional web development and SEO optimization.</h2>
-    <p class="animated wow fadeInUp">I create high-quality websites tailored to your needs. My focus is on delivering functional, user-friendly, and visually appealing sites that resonate with your target audience.</p>
+    <p class="paj">. <br> . </p>
+    <div class="about_container about_container-1 animated">
+        <div class="about_contents">
+            <!-- image section starts -->
+            <section-1 class="imageSection wow fadeInUp" data-wow-delay="0.1s">
+                <img src="images/About-me.png">
+            </section-1>
+            <!-- images section ends -->
+            <!-- info section starts -->
+            <section-1 class="infoSection animated wow ">
+                <h1 class="heartBeat" data-wow-delay="0.5s"><span-5>About</span-5> Me</h1>
+                <h2 class=" animated wow fadeInUp">I specialize in professional web development and SEO optimization.
+                </h2>
+                <p class="animated wow fadeInUp">I create high-quality websites tailored to your needs. My focus is on
+                    delivering functional, user-friendly, and visually appealing sites that resonate with your target
+                    audience.</p>
 
-    <p class="animated wow fadeInUp">In addition, I am experienced in SEO optimization. I can help your website rank higher in search engine results, driving more organic traffic and enhancing your online presence.</p>
-    <div class="personalInfo animated wow fadeInUp">
-        <div><span-1>Name:</span-1><span-1>Suraz Shrestha</span-1></div>
+                <p class="animated wow fadeInUp">In addition, I am experienced in SEO optimization. I can help your
+                    website rank higher in search engine results, driving more organic traffic and enhancing your online
+                    presence.</p>
+                <div class="personalInfo animated wow fadeInUp">
+                    <div><span-1>Name:</span-1><span-1>Suraz Shrestha</span-1></div>
 
-        <div><span-1>Age:</span-1><span-1>21</span-1></div>
+                    <div><span-1>Age:</span-1><span-1>21</span-1></div>
 
-        <div><span-1>Email:</span-1><span-1>Suraz7.21@proton.me</span-1></div>
+                    <div><span-1>Email:</span-1><span-1>Suraz7.21@proton.me</span-1></div>
 
-        <div><span-1>Adress:</span-1><span-1>Kathmandu, Nepal</span-1></div>
-    </div>
+                    <div><span-1>Adress:</span-1><span-1>Kathmandu, Nepal</span-1></div>
+                </div>
 
-    <div class="button fadeInUp">
-        <button>Download CV</button>
-    </div> 
+                <div class="button fadeInUp">
+                    <button>Download CV</button>
+                </div>
 
 
- 
-</section-1> 
-<!-- INFO SECTION ENDS -->
 
-<!-- Skills section Starts -->
-   <!-- <section-1 class="skillSection animated">
+            </section-1>
+            <!-- INFO SECTION ENDS -->
+
+            <!-- Skills section Starts -->
+            <!-- <section-1 class="skillSection animated">
     <div class="skill wow fadeInDown" data-wow-delay="0.2">
 <div class="subject ">Web Designing</div>  
 <div class="progress_bar">
@@ -260,213 +296,220 @@
 
 
 
-<img src="images/about-bg.png" class="small-1">
+            <img src="images/about-bg.png" class="small-1">
 
 
-</section-1>
-<!-- End of about me -->
-<!-- skills sections ends -->
-
-
-
-
-
-    </div>
-</div>
-
-<section class="do_section layout_padding animated" style="background-color: black;">
-    <div class="container">
-    
-      <div class="do_container wow fadeInUp">
+            </section-1>
+            <!-- End of about me -->
+            <!-- skills sections ends -->
 
 
 
-        <div class="box arrow-middle arrow_bg">
-            <div class="img-box img-box-2">
-              <img src="images/d-3.png" alt="">
-
-            </div>
-            <div class="detail-box">
-              <h6>
-                Html5
-              </h6>
-            </div>
-          </div>
 
 
-          <div class="box arrow-end arrow_bg">
-            <div class="img-box img-box-3">
-              <img src="images/d-4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6>
-                Css
-              </h6>
-            </div>
-          </div>
-
-        <div class="box arrow-start arrow_bg">
-          <div class="img-box img-box-4">
-            <img src="images/d-1.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Marketing
-            </h6>
-          </div>
-        </div>
-
-
-        <div class="box arrow-middle arrow_bg">
-          <div class="img-box img-box-1">
-            <img src="images/d-2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Development
-            </h6>
-          </div>
-        </div>
-
-
-     
-
-
-       
-
-
-        <div class="box-1 ">
-          <div class="img-box">
-            <img src="images/d-5.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Wordpress
-            </h6>
-          </div>
-        </div>
-
-
-        <div class="box-2 ">
-          <div class="img-box">
-            <img src="images/d-5.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Wordpress
-            </h6>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-  </section>
-
-<!-------Video Start------->
-<section class="video-section prelative text-center white animated">
-    <div class="section-padding video-overlay">
-      <div class="container wow fadeInUp " data-wow-delay="0.2s">
-        <h3>Watch Now</h3>
-        <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
-        <div class="video-popup">
-          <div class="video-src">
-            <div class="iframe-src">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7YZCUpnaTfg?si=OXjEPDFIxt72813Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-------Video End-------> 
-  
-  
-<div style="background-color: #222; height: 27vh;">
-
-<section-4 >
-    <p class="aalu">.  </p>
-
-
-    <h1 class="LOL animated wow fadeInDown "><span-5>My </span-5>Ser<span-5>vi</span-5>ces..</h1>
-
-        <p class="aalu">. <br> . </p>
-
-</section-4>
-
-</div>
-
-<section-3>
-
-<!-- start of services -->
-<div class="services_container animated  ">
-
-<div class="box wow fadeInLeft" data-wow-delay="0.2s" style="--clr:#89ec5b;">
-<div class="content-1 " >
-    <div class="icon "><ion-icon name="brush"></ion-icon></div>
-    <div class="text fadeInUp" >
-        <h3>Designing</h3>
-        <p>Elevate brands through captivating, creative, and visually stunning design.</p>
-        <a href="#">Read More</a>
-    </div>
-</div>
-</div>
-
-<div class="box wow fadeInUp" data-wow-delay="0.2s" style="--clr:#eb5ae5;">
-    <div class="content-1 ">
-        <div class="icon "><ion-icon name="code-slash"></ion-icon></div>
-        <div class="text ">
-            <h3>Development</h3>
-            <p>
-                Creating powerful and efficient web solutions with cutting-edge technologies.</p>
-            <a href="#">Read More</a>
         </div>
     </div>
-    </div>
+
+    <section class="do_section layout_padding animated" style="background-color: black;">
+        <div class="container">
+
+            <div class="do_container wow fadeInUp">
 
 
-    <div class="box wow fadeInRight madarchod" data-wow-delay="0.2s"style="--clr:#5B98EB;">
-        <div class="content-1 ">
-            <div class="icon "><ion-icon name="search"></ion-icon></div>
-            <div class="text ">
-                <h3>S.E.O</h3>
-                <p>
-                    Optimizing websites for search engines to boost visibility and traffic.</p>
-                <a href="#">Read More</a>
+
+                <div class="box arrow-middle arrow_bg">
+                    <div class="img-box img-box-2">
+                        <img src="images/d-3.png" alt="">
+
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            Html5
+                        </h6>
+                    </div>
+                </div>
+
+
+                <div class="box arrow-end arrow_bg">
+                    <div class="img-box img-box-3">
+                        <img src="images/d-4.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            Css
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="box arrow-start arrow_bg">
+                    <div class="img-box img-box-4">
+                        <img src="images/d-1.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            Marketing
+                        </h6>
+                    </div>
+                </div>
+
+
+                <div class="box arrow-middle arrow_bg">
+                    <div class="img-box img-box-1">
+                        <img src="images/d-2.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            Development
+                        </h6>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="box-1 ">
+                    <div class="img-box">
+                        <img src="images/d-5.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            Wordpress
+                        </h6>
+                    </div>
+                </div>
+
+
+                <div class="box-2 ">
+                    <div class="img-box">
+                        <img src="images/d-5.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h6>
+                            Wordpress
+                        </h6>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
+    </section>
+
+    <!-------Video Start------->
+    <section class="video-section prelative text-center white animated">
+        <div class="section-padding video-overlay">
+            <div class="container wow fadeInUp " data-wow-delay="0.2s">
+                <h3>Watch Now</h3>
+                <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
+                <div class="video-popup">
+                    <div class="video-src">
+                        <div class="iframe-src">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/7YZCUpnaTfg?si=OXjEPDFIxt72813Q"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------Video End------->
+
+
+    <div style="background-color: #222; height: 27vh;">
+
+        <section-4>
+            <p class="aalu">. </p>
+
+
+            <h1 class="LOL animated wow fadeInDown "><span-5>My </span-5>Ser<span-5>vi</span-5>ces..</h1>
+
+            <p class="aalu">. <br> . </p>
+
+        </section-4>
+
+    </div>
+
+    <section-3>
+
+        <!-- start of services -->
+        <div class="services_container animated  ">
+
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s" style="--clr:#89ec5b;">
+                <div class="content-1 ">
+                    <div class="icon "><ion-icon name="brush"></ion-icon></div>
+                    <div class="text fadeInUp">
+                        <h3>Designing</h3>
+                        <p>Elevate brands through captivating, creative, and visually stunning design.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box wow fadeInUp" data-wow-delay="0.2s" style="--clr:#eb5ae5;">
+                <div class="content-1 ">
+                    <div class="icon "><ion-icon name="code-slash"></ion-icon></div>
+                    <div class="text ">
+                        <h3>Development</h3>
+                        <p>
+                            Creating powerful and efficient web solutions with cutting-edge technologies.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box wow fadeInRight madarchod" data-wow-delay="0.2s" style="--clr:#5B98EB;">
+                <div class="content-1 ">
+                    <div class="icon "><ion-icon name="search"></ion-icon></div>
+                    <div class="text ">
+                        <h3>S.E.O</h3>
+                        <p>
+                            Optimizing websites for search engines to boost visibility and traffic.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/triangle-left.png" class="triangle3">
+            <!-- <img src="images/triangle-left.png" class="triangle4"> -->
+
         </div>
 
-        <img src="images/triangle-left.png" class="triangle3">
-        <!-- <img src="images/triangle-left.png" class="triangle4"> -->
-
-</div>
-
-</section-3> 
+    </section-3>
 
 
-<!-- Hire me section -->
+    <!-- Hire me section -->
 
-<section-5>
-<div class="section-5">
-    <div  class="text-2 wow fadeInUp" data-wow-delay="0.3s">
-        <h2 data-type="Professional Web Solutions
+    <section-5>
+        <div class="section-5">
+            <div class="text-2 wow fadeInUp" data-wow-delay="0.3s">
+                <h2 data-type="Professional Web Solutions
         "><span-5>Professional</span-5> Web <span-5>Solutions</span-5></h2>
-        <p>If you are looking for high-quality web design, development, and SEO services, you've come to the right place.</p>
-        <p>Let's discuss your project and create an outstanding online presence.</p>
-        <a href="">TALK TO ME <span> &#x27F6;</span></a>    </div>
-    <img src="images/Programming.png" alt="Web Solutions Image" class="right-image animated wow bounceInUp" data-wow-delay="0.4s">
-    <!-- <img src="images/triangle-left.png" class="triangle5"> -->
+                <p>If you are looking for high-quality web design, development, and SEO services, you've come to the
+                    right place.</p>
+                <p>Let's discuss your project and create an outstanding online presence.</p>
+                <a href="">TALK TO ME <span> &#x27F6;</span></a>
+            </div>
+            <img src="images/Programming.png" alt="Web Solutions Image" class="right-image animated wow bounceInUp"
+                data-wow-delay="0.4s">
+            <!-- <img src="images/triangle-left.png" class="triangle5"> -->
 
-</div>
-</section-5>
-<!-- portfoliooo -->
+        </div>
+    </section-5>
+    <!-- portfoliooo -->
 
     <!-- portfolioo -->
     <section class="portfolio animated " id="portfolio">
         <div class="portfolio-title">
-            <h2  class="wow fadeInUp"><span-5>LATEST</span-5> PRO<span-5>JE</span-5>CT</h2>
+            <h2 class="wow fadeInUp"><span-5>LATEST</span-5> PRO<span-5>JE</span-5>CT</h2>
         </div>
         <div class="portfolio-content">
             <div class="row-p wow fadeInLeft" data-wow-delay="0.1s">
@@ -477,8 +520,8 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-    
-            <div class="row-p wow fadeInDown"data-wow-delay="0.1s">
+
+            <div class="row-p wow fadeInDown" data-wow-delay="0.1s">
                 <img src="images/coming.JPEG">
                 <div class="layer">
                     <h5>Visual Design</h5>
@@ -486,7 +529,7 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-    
+
             <div class="row-p wow fadeInRight" data-wow-delay="0.1s">
                 <img src="images/cumming.JPEG">
                 <div class="layer">
@@ -495,8 +538,8 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-    
-    
+
+
             <div class="row-p wow fadeInLeft" data-wow-delay="0.1s">
                 <img src="images/comming-soon4.JPEG">
                 <div class="layer">
@@ -505,8 +548,8 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-    
-    
+
+
             <div class="row-p wow fadeInUp" data-wow-delay="0.1s">
                 <img src="images/comming5.JPEG">
                 <div class="layer">
@@ -515,8 +558,8 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-    
-    
+
+
             <div class="row-p wow fadeInRight" data-wow-delay="0.1s">
                 <img src="images/comming-soon4.JPEG">
                 <div class="layer">
@@ -525,395 +568,414 @@
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-    
+
             <!-- Add more portfolio items here -->
         </div>
     </section>
-<!-- why me? -->
-<section-t>
-    <div class="animated wow fadeInDown" data-wow-delay="0.2s">
-        <h1><Span-5>WHY</Span-5> YOU <span-5> CHOOSE</span-5> ME ?</h1>
- 
-    </div>
- <div class="timeline animated">
-    <div class="container-t left-container-t animated wow fadeInUp" data-wow-delay="0.3s
+    <!-- why me? -->
+    <section-t>
+        <div class="animated wow fadeInDown" data-wow-delay="0.2s">
+            <h1><Span-5>WHY</Span-5> YOU <span-5> CHOOSE</span-5> ME ?</h1>
+
+        </div>
+        <div class="timeline animated">
+            <div class="container-t left-container-t animated wow fadeInUp" data-wow-delay="0.3s
     ">
-        <img src="images/businessman.png">
-        <div class="text-box-t">
-            <h2><span>Professional</span> Expertise.</h2>
-            <p>With a proven track record of designing, developing, and optimizing websites, I bring a high level of professional expertise to your project.</p>
-            <span-t class="left-container-t-arrow"></span-t>
-        </div>
-    </div>
+                <img src="images/businessman.png">
+                <div class="text-box-t">
+                    <h2><span>Professional</span> Expertise.</h2>
+                    <p>With a proven track record of designing, developing, and optimizing websites, I bring a high
+                        level of professional expertise to your project.</p>
+                    <span-t class="left-container-t-arrow"></span-t>
+                </div>
+            </div>
 
-    <div class="container-t right-container-t animated wow fadeInUp" data-wow-delay="0.4s
+            <div class="container-t right-container-t animated wow fadeInUp" data-wow-delay="0.4s
     ">
-        <img src="images/customize.png">
-        <div class="text-box-t">
-            <h2><span>Customized</span> Solutions.</h2>
-            <p>I understand that every project is unique. I provide tailored solutions that align with your specific goals and requirements.</p>
-            <span-t class="right-container-t-arrow"></span-t>
-        </div>
-    </div>
-    <div class="container-t left-container-t animated wow fadeInUp" data-wow-delay="0.4s
+                <img src="images/customize.png">
+                <div class="text-box-t">
+                    <h2><span>Customized</span> Solutions.</h2>
+                    <p>I understand that every project is unique. I provide tailored solutions that align with your
+                        specific goals and requirements.</p>
+                    <span-t class="right-container-t-arrow"></span-t>
+                </div>
+            </div>
+            <div class="container-t left-container-t animated wow fadeInUp" data-wow-delay="0.4s
     ">
-        <img src="images/high-quality.png" >
-        <div class="text-box-t">
-            <h2><span>Quality</span> and Precision.</h2>
-            <p>My work is characterized by attention to detail and a commitment to delivering high-quality results.</p>
-            <span-t class="left-container-t-arrow"></span-t>
-        </div>
-    </div>
-    <div class="container-t right-container-t animated wow fadeInUp" data-wow-delay="0.4s
+                <img src="images/high-quality.png">
+                <div class="text-box-t">
+                    <h2><span>Quality</span> and Precision.</h2>
+                    <p>My work is characterized by attention to detail and a commitment to delivering high-quality
+                        results.</p>
+                    <span-t class="left-container-t-arrow"></span-t>
+                </div>
+            </div>
+            <div class="container-t right-container-t animated wow fadeInUp" data-wow-delay="0.4s
     ">
-        <img src="images/clock.png">
-        <div class="text-box-t">
-            <h2><span>Timely</span> Delivery.</h2>
-            <p> I prioritize meeting deadlines to ensure that your project progresses smoothly and stays on schedule.</p>
-            <span-t class="right-container-t-arrow"></span-t>
-        </div>
-    </div>
-    <div class="container-t left-container-t animated wow fadeInUp" data-wow-delay="0.4s
+                <img src="images/clock.png">
+                <div class="text-box-t">
+                    <h2><span>Timely</span> Delivery.</h2>
+                    <p> I prioritize meeting deadlines to ensure that your project progresses smoothly and stays on
+                        schedule.</p>
+                    <span-t class="right-container-t-arrow"></span-t>
+                </div>
+            </div>
+            <div class="container-t left-container-t animated wow fadeInUp" data-wow-delay="0.4s
     ">
-        <img src="images/communication.png">
-        <div class="text-box-t">
-            <h2><span>Effective</span> Communication.</h2>
-            <p>Clear and consistent communication with clients is essential. I ensure you're informed and involved throughout the project.</p>
-            <span-t class="left-container-t-arrow"></span-t>
-        </div>
-    </div>
-    <div class="container-t right-container-t animated wow fadeInUp" data-wow-delay="0.4s
+                <img src="images/communication.png">
+                <div class="text-box-t">
+                    <h2><span>Effective</span> Communication.</h2>
+                    <p>Clear and consistent communication with clients is essential. I ensure you're informed and
+                        involved throughout the project.</p>
+                    <span-t class="left-container-t-arrow"></span-t>
+                </div>
+            </div>
+            <div class="container-t right-container-t animated wow fadeInUp" data-wow-delay="0.4s
     ">
-        <img src="images/data-driven.png" >
-        <div class="text-box-t">
-            <h2><span>Results</span>-Driven.</h2>
-            <p>My approach is centered around achieving measurable results, whether it's through an aesthetically pleasing design, efficient development, or improved SEO performance. Your success is my priority.</p>
-            <span-t class="right-container-t-arrow"></span-t>
-        </div>
-    </div>
- </div>
-
-</section-t>
-
-<!-- testomonial -->
-
-<section class="testim animated " id="testim">
-    <div class="content-Cr">
-        <h1 class="text wow fadeInUp" data-text="Testimonial">Testimonial</h1>
-            </div>
-    <div class="wrap wow fadeInUp" data-wow-delay="0.3s">
-
-        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-        <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
-
-        <ul class="dots" id="testim-dots">
-            <li class="dot active"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-        </ul>
-
-        <div class="cont" id="testim-content-Cr">
-
-            <div class="active">
-                <div class="img"><img src="images/testii.png"></div>
-                <h2>Ronaldo Siuu</h2>
-                <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.</p>
-            </div>
-            
-            <div>
-                <div class="img"><img src="images/testi-2.jpg"></div>
-                <h2>Messi Pessi</h2>
-                <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.</p>
-            </div>
-            
-            <div>
-                <div class="img"><img src="images/testi-3.jpg"></div>
-                <h2>Neimar Jmar</h2>
-                <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.</p>
-            </div>
-            
-            <div>
-                <div class="img"><img src="images/testi-4.jpeg"></div>
-                <h2>M.bappe Turtle</h2>
-                <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.</p>
-            </div>
-            
-            <div>
-                <div class="img"><img src="images/testi-5.jpg"></div>
-                <h2>IQ=100</h2>
-                <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- contact me  -->
-   <!-- ----------------Contact section---------- -->
-   <section-c>
-    <div class="container-c animated">
-        <div class="contactInfo wow fadeInUp" data-wow-delay="1.5s">
-            <div>
-                <h2>Contact Info</h2>
-                <ul-c class="info">
-                    <li-c>
-                        <span-3><img src="images/location.png" alt=""></span-3>
-                        <span-3>Thamel , Kathmandu <br>
-                        Nepal</span-3>
-                    </li-c>
-                    <li-c>
-                        <span-3><img src="images/mail.png" alt=""></span-3>
-                        <span-3>Suraz7.21@proton.me</span-3>
-                    </li-c>
-                    <li-c>
-                        <span-3><img src="images/call.png" alt=""></span-3>
-                        <span-3>+977 9818799908</span-3>
-                    </li-c>
-                </ul-c>
-            </div>
-<ul-c class="sci wow fadeInUp">
-<li-c><a href="#"><img src="images/1.png" alt=""></a></li-c>
-<li-c><a href="#"><img src="images/2.png" alt=""></a></li-c>
-<li-c><a href="#"><img src="images/3.png" alt=""></a></li-c>
-<li-c><a href="#"><img src="images/4.png" alt=""></a></li-c>
-<li-c><a href="#"><img src="images/5.png" alt=""></a></li-c>
-</ul-c>
-</div>
-        <div class="contactForm wow fadeInUp">
-            <h2 class="wow fadeInLeft" data-wow-delay="0.3s"
-            >Send a Message</h2>
-            <div class="formBox">
-                <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                    <input type="text" required>
-        <span-3 >First Name</span-3>               
-             </div>
-                <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                    <input type="text" required>
-        <span-3>Last Name</span-3>               
-             </div>
-                <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                    <input type="email" required>
-        <span-3>Email Address</span-3>               
-             </div>
-                <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                    <input type="text" required>
-        <span-3>Mobile Number</span-3>               
-             </div>
-                <div class="inputBox w100 wow fadeInLeft" data-wow-delay="0.3s">
-                    <textarea required></textarea>
-        <span-3>Write your Message here...</span-3>   
-        
-        <div class="inputBox w100 wow fadeInUp" data-wow-delay="0.3s">
-            <input type="submit" value="Send">
-</div>
-             </div>
-            </div>
-        </div>
-     </div>
-</section-c>
-
-
-<!-- footer -->
-
-<footer class="footer">
-    <div class="container-f">
-        <div class="row-f">
-            <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
-            ">
-                <h4>S.KuRaZ</h4>
-                <ul-f>
-
-                    <li-f><a href="index.html">Home</a></li-f>
-                    <li-f><a href="About.html">about me</a></li-f>
-                    <li-f><a href="#">Portfolio</a></li-f>
-                    <li-f><a href="#">Services</a></li-f>
-                    <li-f><a href="#">Testimonial</a></li-f>
-                </ul-f>
-            </div>
-            <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
-            ">
-                <h4>Process</h4>
-                <ul-f>
-                    <li-f><a href="#">Get A Quote</a></li-f>
-                    <li-f><a href="#">Talk to me</a></li-f>
-                    <li-f><a href="#">Express your idea</a></li-f>
-                    <li-f><a href="#">Get your website </a></li-f>
-                                       </ul-f>
-            </div>
-            <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
-            ">
-                <h4>Offers</h4>
-                <ul-f>
-                    <li-f><a href="#">Website</a></li-f>
-                    <li-f><a href="#">E-commerce</a></li-f>
-                    <li-f><a href="#">Static</a></li-f>
-                    <li-f><a href="#">Graphic Design</a></li-f>
-                </ul-f>
-            </div>
-            <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
-            ">
-                <h4>follow me</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <img src="images/data-driven.png">
+                <div class="text-box-t">
+                    <h2><span>Results</span>-Driven.</h2>
+                    <p>My approach is centered around achieving measurable results, whether it's through an
+                        aesthetically pleasing design, efficient development, or improved SEO performance. Your success
+                        is my priority.</p>
+                    <span-t class="right-container-t-arrow"></span-t>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+
+    </section-t>
+
+    <!-- testomonial -->
+
+    <section class="testim animated " id="testim">
+        <div class="content-Cr">
+            <h1 class="text wow fadeInUp" data-text="Testimonial">Testimonial</h1>
+        </div>
+        <div class="wrap wow fadeInUp" data-wow-delay="0.3s">
+
+            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+            <ul class="dots" id="testim-dots">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+
+            <div class="cont" id="testim-content-Cr">
+
+                <div class="active">
+                    <div class="img"><img src="images/testii.png"></div>
+                    <h2>Ronaldo Siuu</h2>
+                    <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the
+                        arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="images/testi-2.jpg"></div>
+                    <h2>Messi Pessi</h2>
+                    <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the
+                        arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="images/testi-3.jpg"></div>
+                    <h2>Neimar Jmar</h2>
+                    <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the
+                        arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="images/testi-4.jpeg"></div>
+                    <h2>M.bappe Turtle</h2>
+                    <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the
+                        arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="images/testi-5.jpg"></div>
+                    <h2>IQ=100</h2>
+                    <p>This is just a demonstration of a review for our wonderful service. We eagerly anticipate the
+                        arrival of genuine customer feedback, and we look forward to showcasing their experiences soon.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact me  -->
+    <!-- ----------------Contact section---------- -->
+    <section-c>
+        <div class="container-c animated">
+            <div class="contactInfo wow fadeInUp" data-wow-delay="1.5s">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul-c class="info">
+                        <li-c>
+                            <span-3><img src="images/location.png" alt=""></span-3>
+                            <span-3>Thamel , Kathmandu <br>
+                                Nepal</span-3>
+                        </li-c>
+                        <li-c>
+                            <span-3><img src="images/mail.png" alt=""></span-3>
+                            <span-3>Suraz7.21@proton.me</span-3>
+                        </li-c>
+                        <li-c>
+                            <span-3><img src="images/call.png" alt=""></span-3>
+                            <span-3>+977 9818799908</span-3>
+                        </li-c>
+                    </ul-c>
+                </div>
+                <ul-c class="sci wow fadeInUp">
+                    <li-c><a href="#"><img src="images/1.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/2.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/3.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/4.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/5.png" alt=""></a></li-c>
+                </ul-c>
+            </div>
+            <div class="contactForm wow fadeInUp">
+                <h2 class="wow fadeInLeft" data-wow-delay="0.3s">Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="text" required>
+                        <span-3>First Name</span-3>
+                    </div>
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="text" required>
+                        <span-3>Last Name</span-3>
+                    </div>
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="email" required>
+                        <span-3>Email Address</span-3>
+                    </div>
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="text" required>
+                        <span-3>Mobile Number</span-3>
+                    </div>
+                    <div class="inputBox w100 wow fadeInLeft" data-wow-delay="0.3s">
+                        <textarea required></textarea>
+                        <span-3>Write your Message here...</span-3>
+
+                        <div class="inputBox w100 wow fadeInUp" data-wow-delay="0.3s">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-c>
 
 
-<!-- cursor -->
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container-f">
+            <div class="row-f">
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>S.KuRaZ</h4>
+                    <ul-f>
+
+                        <li-f><a href="index.html">Home</a></li-f>
+                        <li-f><a href="About.html">about me</a></li-f>
+                        <li-f><a href="#">Portfolio</a></li-f>
+                        <li-f><a href="#">Services</a></li-f>
+                        <li-f><a href="#">Testimonial</a></li-f>
+                    </ul-f>
+                </div>
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>Process</h4>
+                    <ul-f>
+                        <li-f><a href="#">Get A Quote</a></li-f>
+                        <li-f><a href="#">Talk to me</a></li-f>
+                        <li-f><a href="#">Express your idea</a></li-f>
+                        <li-f><a href="#">Get your website </a></li-f>
+                    </ul-f>
+                </div>
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>Offers</h4>
+                    <ul-f>
+                        <li-f><a href="#">Website</a></li-f>
+                        <li-f><a href="#">E-commerce</a></li-f>
+                        <li-f><a href="#">Static</a></li-f>
+                        <li-f><a href="#">Graphic Design</a></li-f>
+                    </ul-f>
+                </div>
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>follow me</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- cursor -->
     <div class="cursor"></div>
-   <div class="cursor2"></div>
+    <div class="cursor2"></div>
 
-   <script>
-     var cursor = document.querySelector(".cursor");
-     var cursor2 = document.querySelector(".cursor2");
-   
-     document.addEventListener("mousemove", function (e) {
-       cursor.style.left = e.clientX + "px";
-       cursor.style.top = e.clientY + "px";
-       cursor2.style.left = e.clientX + "px";
-       cursor2.style.top = e.clientY + "px";
-     });
-     </script>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
 
-     <!-- icon -->
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<!-- java script for nav mobilr -->
-
-
-<script>
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const navMenu = document.getElementById('nav-menu');
-        const navToggle = document.getElementById('nav-toggle');
-        const navClose = document.getElementById('nav-close');
-    
-        // Show menu
-        if (navToggle) {
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.add('show-menu');
-            });
-        }
-    
-        // Hide menu
-        if (navClose) {
-            navClose.addEventListener('click', () => {
-                navMenu.classList.remove('show-menu');
-            });
-        }
-    
-        const navLink = document.querySelectorAll('.nav__link');
-    
-        function linkAction() {
-            navMenu.classList.remove('show-menu');
-        }
-    
-        navLink.forEach(n => n.addEventListener('click', linkAction));
-    });
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+            cursor2.style.left = e.clientX + "px";
+            cursor2.style.top = e.clientY + "px";
+        });
     </script>
-        <script type="text/javascript">
-            var bg = document.getElementById("background");
-            bg.volume = 0.05;
-            const music = document.getElementById("music");
-            const icon = document.getElementById("icon-m");
-    
-    function play() { 
-      bg.play();
-      icon.style.display = 'block';
-      music.style.display = 'none'; 
-    } 
-    function pause() { 
-      bg.pause();
-      icon.style.display = 'none';
-      music.style.display = 'block';  
-    } 
-        </script>
-        
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
-<!-- scrollIt js --> 
-<script src="js/scrollIt.min.js"></script> 
-<script src="wow.min.js"></script> 
-<script>
-	wow = new WOW();
-	wow.init();
-$(document).ready(function(e) {
 
-	$('#video-icon').on('click',function(e){
-	e.preventDefault();
-	$('.video-popup').css('display','flex');
-	$('.iframe-src').slideDown();
-	});
-	$('.video-popup').on('click',function(e){
-	var $target = e.target.nodeName;
-	var video_src = $(this).find('iframe').attr('src');
-	if($target != 'IFRAME'){
-	$('.video-popup').fadeOut();
-	$('.iframe-src').slideUp();
-	$('.video-popup iframe').attr('src'," ");
-	$('.video-popup iframe').attr('src',video_src);
-	}
-	});
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-	$('.slider').bxSlider({
-	pager: false
-	});
-});
-    
-$(window).on("scroll",function () {
+    <!-- java script for nav mobilr -->
 
-	var bodyScroll = $(window).scrollTop(),
-	navbar = $(".navbar");
-	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo-black.png');
-	navbar.addClass("nav-scroll");
 
-}else{
-	$('.navbar-logo img').attr('src','images/logo.png');
-	navbar.removeClass("nav-scroll");
-}
+    <script>
 
-});
-$(window).on("load",function (){
-	var bodyScroll = $(window).scrollTop(),
-	navbar = $(".navbar");
-	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','images/logo-black.png');
-	navbar.addClass("nav-scroll");
-	}else{
-	$('.navbar-logo img').attr('src','images/logo-white.png');
-	navbar.removeClass("nav-scroll");
-	}
+        document.addEventListener("DOMContentLoaded", function () {
+            const navMenu = document.getElementById('nav-menu');
+            const navToggle = document.getElementById('nav-toggle');
+            const navClose = document.getElementById('nav-close');
 
-	$.scrollIt({
-	
-	easing: 'swing',      // the easing function for animation
-	scrollTime: 900,       // how long (in ms) the animation takes
-	activeClass: 'active', // class given to the active nav element
-	onPageChange: null,    // function(pageIndex) that is called when page is changed
-	topOffset: -63
-	});
-});
+            // Show menu
+            if (navToggle) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.add('show-menu');
+                });
+            }
 
-</script>
-<script>
-    new WOW().init();
-  </script>
- 
-<!-- for fadein -->
-<script src="script.js" defer></script>
+            // Hide menu
+            if (navClose) {
+                navClose.addEventListener('click', () => {
+                    navMenu.classList.remove('show-menu');
+                });
+            }
+
+            const navLink = document.querySelectorAll('.nav__link');
+
+            function linkAction() {
+                navMenu.classList.remove('show-menu');
+            }
+
+            navLink.forEach(n => n.addEventListener('click', linkAction));
+        });
+    </script>
+    <script type="text/javascript">
+        var bg = document.getElementById("background");
+        bg.volume = 0.05;
+        const music = document.getElementById("music");
+        const icon = document.getElementById("icon-m");
+
+        function play() {
+            bg.play();
+            icon.style.display = 'block';
+            music.style.display = 'none';
+        }
+        function pause() {
+            bg.pause();
+            icon.style.display = 'none';
+            music.style.display = 'block';
+        } 
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        wow = new WOW();
+        wow.init();
+        $(document).ready(function (e) {
+
+            $('#video-icon').on('click', function (e) {
+                e.preventDefault();
+                $('.video-popup').css('display', 'flex');
+                $('.iframe-src').slideDown();
+            });
+            $('.video-popup').on('click', function (e) {
+                var $target = e.target.nodeName;
+                var video_src = $(this).find('iframe').attr('src');
+                if ($target != 'IFRAME') {
+                    $('.video-popup').fadeOut();
+                    $('.iframe-src').slideUp();
+                    $('.video-popup iframe').attr('src', " ");
+                    $('.video-popup iframe').attr('src', video_src);
+                }
+            });
+
+            $('.slider').bxSlider({
+                pager: false
+            });
+        });
+
+        $(window).on("scroll", function () {
+
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+        });
+        $(window).on("load", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo-white.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+            $.scrollIt({
+
+                easing: 'swing',      // the easing function for animation
+                scrollTime: 900,       // how long (in ms) the animation takes
+                activeClass: 'active', // class given to the active nav element
+                onPageChange: null,    // function(pageIndex) that is called when page is changed
+                topOffset: -63
+            });
+        });
+
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- for fadein -->
+    <script src="script.js" defer></script>
 
 </body>
+
 </html>

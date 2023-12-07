@@ -131,7 +131,9 @@ background: url(images/pattern.png);
      text-decoration: none;
      position: relative;
  }
- 
+ nav ul li a:hover{
+    color: #eeff00;
+ }
  nav ul li a::after {
      content: '';
      width: 0%;
@@ -145,6 +147,10 @@ background: url(images/pattern.png);
  }
  nav ul li a:hover::after {
      width: 50%;
+     
+ }
+ .active{
+    color: rgb(255, 191, 0);
  }
  
 
@@ -577,7 +583,7 @@ h3 span-2.stop-blinking::before {
 
     @media (max-width: 1060px) {
         nav ul li {
-            margin: 10px 17px;
+            margin: 10px 13px;
         }
     
     }

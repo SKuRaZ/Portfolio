@@ -29,7 +29,7 @@ ul-f{
 .footer-col h4::before{
 	content: '';
 	position: absolute;
-	left:0;
+	/* left:0; */
 	bottom: -10px;
 	background-color: #e91e63;
 	height: 2px;
@@ -75,8 +75,15 @@ ul-f{
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+	text-align: center;
 }
 }
+@media(min-width: 767px){
+
+.footer-col h4::before{
+	left: 0;}}
+
+
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
