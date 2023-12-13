@@ -181,7 +181,8 @@ particles();
 
 // loader
 
-var loader = document.getElementById("loader");
-window.addEventListener("load", function() {
-    loader.style.display = "none";
+document.addEventListener("DOMContentLoaded", function() {
+  // Hide the loader when the DOM is fully loaded
+  document.getElementById("loader-1").style.display = "none";
 });
+
