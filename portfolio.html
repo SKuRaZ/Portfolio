@@ -42,6 +42,39 @@
             overflow: hidden;
 
         }
+        
+.line {
+  background: #000000;
+  height: 150%;
+  width: 0.5vw;
+  position: absolute;
+  z-index: -1;
+  animation: slide 8s linear 0s infinite;
+  overflow: hidden;
+}
+
+.two {
+  margin-left: -5vw;
+  animation: slide-two 8s linear 4s infinite;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes slide-two {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(105vw);
+  }
+}
     </style>
 </head>
 
@@ -117,6 +150,94 @@
 
 
     <!--  -->
+
+
+   <!-- PORTFOLIO PAGE -->
+   <section-port class="portfolio-port section-port">
+    <!-- <div class="line"></div>
+<div class="line two"></div> -->
+    <div class="container-port" >
+        <div class="top-side-port">
+            <h4 class="title-port"><button-title class="btn-title">MY WORKS
+            </button-title></h4>
+            <h2><span style="color:aqua;">POR</span>TFOL<span style="color:aqua;">IO</span></h2>
+        </div>
+
+        <div class="filters-port">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".website-design">WEB DESIGNS</li>
+                <li data-filter=".wordpress">WORDPESS SITE</li>
+                <li data-filter=".SEO">S.E.O</li>
+                <li data-filter=".personal">Personal Portfolio</li>
+            </ul>
+        </div>
+
+        <div class="filters-content-port">
+            <div class="row-port grid-port">
+                <div class="row-p  all website-design wordpress wow fadeInDown " data-wow-delay="0.1s">
+                    <img src="images/portfolio-main.JPEG">
+                    <div class="layer">
+                        <h5>Visual Design</h5>
+                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="row-p all website-design  SEO wow fadeInDown" data-wow-delay="0.1s">
+                    <img src="images/coming.JPEG">
+                    <div class="layer">
+                        <h5>Visual Design</h5>
+                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="row-p  all wordpress personal  wow fadeInDown" data-wow-delay="0.1s">
+                    <img src="images/cumming.JPEG">
+                    <div class="layer">
+                        <h5>Visual Design</h5>
+                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="row-p  all  corporate SEO wow fadeInDown" data-wow-delay="0.1s">
+                    <img src="images/comming-soon4.JPEG">
+                    <div class="layer">
+                        <h5>Visual Design</h5>
+                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="row-p  all corporate personal SEO wordpress wow fadeInDown " data-wow-delay="0.1s">
+                    <img src="images/comming5.JPEG">
+                    <div class="layer">
+                        <h5>Visual Design</h5>
+                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="row-p all personal  wow fadeInDown" data-wow-delay="0.1s">
+                    <img src="images/comming-soon4.JPEG">
+                    <div class="layer">
+                        <h5>Visual Design</h5>
+                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</section-port>
 
 
 
@@ -235,7 +356,8 @@
         </div>
     </footer>
 
-
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
     <!-- cursor -->
     <div class="cursor"></div>
     <div class="cursor2"></div>
@@ -385,6 +507,29 @@
 
     <!-- for fadein -->
     <script src="script.js" defer></script>
+
+    <!-- PORTFOLIO -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <script>
+        $('.filters-port ul li').click(function () {
+            $('.filters-port ul li').removeClass('active');
+            $(this).addClass('active');
+
+            var data = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: data
+            })
+        });
+
+        var $grid = $(".grid-port").isotope({
+            itemSelector: ".all",
+            percentPosition: true,
+            masonry: {
+                columnWidth: ".all"
+            }
+        })</script>
 
 </body>
 

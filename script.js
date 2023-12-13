@@ -177,3 +177,11 @@ function DistanceBetween(p1, p2) {
 
 create();
 particles();
+
+
+// loader
+
+var loader = document.getElementById("loader");
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+});

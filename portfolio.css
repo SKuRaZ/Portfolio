@@ -149,3 +149,118 @@
        padding: 0 10px;
    }
 }
+
+.section-port {
+  padding: 30px 0;
+  color: #FFF;
+  width: 100%;
+
+  background: linear-gradient(#013e39, #330c54 50%, #283a42 50%, #544878 100%);  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section-port .top-side-port {
+  text-align: center;
+
+}
+.container-port{
+   background-color: #00000041;
+}
+
+.section-port .top-side-port .title-port {
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 63px
+}
+
+/* .section-port .top-side-port .title-port:after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid #494949;
+  margin: 8px auto;
+} */
+
+@keyframes backgroundAnimation {
+   0% {
+       background-position: 0% 50%;
+   }
+   100% {
+       background-position: 100% 50%;
+   }
+}
+
+.section-port .top-side-port h2 {
+   font-weight: 700;
+   margin-top: 25px;
+   font-size: 64px;
+   background: linear-gradient(90deg, 
+       #00ff51, #ff33cc, #ff66ff, #00ffff, #00cfff, #009bff, 
+       #0068ff, #008069, #348200, #d42cd4 , #00ff51
+   );
+   background-size: 1800% 1800%;
+   animation: backgroundAnimation 18s ease infinite;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width:768px){
+  .section-port .top-side-port h2 {
+
+      font-size: 30px;
+  }
+
+  
+}
+.section-port.portfolio-port .filters-port {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section-port.portfolio-port .filters-port ul {
+  padding: 0;
+}
+
+.section-port.portfolio-port .filters-port ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.section-port.portfolio-port .filters-port ul li:after {
+  content: "";
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  background: #333;
+  transition: width 350ms ease-out;
+}
+
+.section-port.portfolio-port .filters-port ul li:hover:after {
+  width: calc(100% - 60px);
+  transition: width 350ms ease-out;
+}
+
+.section-port.portfolio-port .filters-port ul li.active:after {
+  width: calc(100% - 60px);
+}
+
+.section-port.portfolio-port .filters-content-port {
+  margin-top: 50px;
+}
+
+.section-port.portfolio-port .filters-content-port .show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 350ms;
+}
+
+.section-port.portfolio-port .filters-content-port .hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 350ms;
+}
