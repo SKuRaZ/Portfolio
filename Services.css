@@ -195,3 +195,319 @@ transition: 0.5s4 ease-in-out;
 overflow: hidden;      
     }
 }
+
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --text-color: #000000;
+  --bg-color: #222222;
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 0.938rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*==================== BASE ====================*/
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--normal-font-size);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: var(--body-font);
+  transition: all 0.2s ease;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.container-Service1 {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card__container-Service1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 90%; */
+  margin: auto;
+  /* padding: 60px 0; */
+}
+
+.card__bx-Service1 {
+  --dark-color: #2e2e2e;
+  --dark-alt-color: #777777;
+  --white-color: #ffffff;
+  --button-color: #333333;
+  --transition: 0.5s ease-in-out;
+
+  font-family: inherit;
+  height: 350px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-color);
+  transition: var(--transition);
+  
+}
+
+.card__bx-Service1::before,
+.card__bx-Service1::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: var(--transition);
+  overflow: hidden;
+
+}
+
+.card__bx-Service1::before {
+  inset: -10px 50px;
+  border-top: 4px solid var(--clr);
+  transform: skewY(15deg);
+  border-bottom: 4px solid var(--clr);
+  overflow: hidden;
+
+}
+
+.card__bx-Service1:hover::before {
+  inset: -10px 40px;
+  transform: skewY(0deg);
+  transition-delay: 0.2s;
+  overflow: hidden;
+
+}
+
+.card__bx-Service1::after {
+  inset: 60px -10px;
+  border-left: 4px solid var(--clr);
+  transform: skew(15deg);
+  border-right: 4px solid var(--clr);
+  overflow: hidden;
+
+}
+
+.card__bx-Service1:hover::after {
+  inset: 40px -10px;
+  transform: skew(0deg);
+  transition-delay: 0.4s;
+  overflow: hidden;
+
+}
+
+.card__bx-Service1:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__bx-Service1 .card__data-Service1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  padding: 0 20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card__bx-Service1 .card__data-Service1 .card__icon-Service1 {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--text-color);
+  background-color: var(--dark-color);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.card__bx-Service1 .card__data-Service1 .card__icon-Service1 {
+  color: var(--clr);
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 6px var(--clr);
+}
+
+.card__bx-Service1:hover .card__data-Service1 .card__icon-Service1 {
+  color: var(--dark-color);
+  background-color: var(--clr);
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 300px var(--clr);
+  transition-delay: 0.35s;
+}
+
+.card__bx-Service1 .card__data-Service1 .card__content-Service1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__bx-Service1 .card__data-Service1 h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  transition: var(--transition);
+}
+
+.card__bx-Service1:hover .card__data-Service1 h3 {
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+
+.card__bx-Service1 .card__data-Service1 p {
+  font-size: 0.9rem;
+  color: var(--dark-alt-color);
+  transition: var(--transition);
+}
+
+.card__bx-Service1:hover .card__data-Service1 p {
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+
+.card__bx-Service1 .card__data-Service1 a {
+  position: relative;
+  display: inline-flex;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  border: 2px solid var(--clr);
+  color: var(--dark-color);
+  background-color: var(--clr);
+  transition: var(--transition);
+}
+
+.card__bx-Service1:hover .card__data-Service1 a {
+  color: var(--clr);
+  background-color: var(--dark-color);
+}
+
+.card__bx-Service1:hover .card__data-Service1 a:hover {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+  background-color: var(--clr);
+}
+
+.serviceBox-Service1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  width: 320px;
+  height: 350px;
+  background: #51446e;
+  overflow: hidden;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .card__container-Service1 {
+    flex-wrap: wrap;
+    gap: 63px;
+    justify-content: center;
+  }
+
+  .serviceBox-Service1 {
+    flex-direction: row;
+  }
+}
+
+.serviceBox-Service1 .icon-Service1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--i);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition-delay: 0.25s;
+}
+
+.serviceBox-Service1:hover .icon-Service1 {
+  top: 32px;
+  left: calc(50% - 40.9px);
+  height: 81.5px;
+  width: 81.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 4px var(--dark-color), 0 0 0 6px var(--clr);
+  transition-delay: 0s;
+}
+
+ .serviceBox-Service1 .icon-Service1 i {
+  font-size: 5em;
+  color: #fff;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+.serviceBox-Service1:hover .icon-Service1 i {
+  font-size: 2em;
+  transition-delay: 0s;
+}
+
+
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+ }
+ 
+ .service-title {
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: 64px;
+    background: linear-gradient(90deg, 
+        #00ff51, #ff33cc, #ff66ff, #00ffff, #00cfff, #009bff, 
+        #0068ff, #008069, #348200, #d42cd4 , #00ff51
+    );
+    background-size: 1800% 1800%;
+    animation: backgroundAnimation 18s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ @media screen and (max-width:768px){
+   .service-title {
+ 
+       font-size: 30px;
+   }
+ 
+   
+ }
