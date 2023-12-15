@@ -28,6 +28,7 @@
     <!-- <a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a> -->
     <link rel="stylesheet" href="hireme.css">
     <link rel="icon" type="image/x-icon" href="images/fav.ico">
+    <link rel="stylesheet" href="CSS/Getintouch.css">
 
     <style>
         .nav-another {
@@ -42,44 +43,11 @@
             overflow: hidden;
 
         }
-        
-.line {
-  background: #000000;
-  height: 150%;
-  width: 0.5vw;
-  position: absolute;
-  z-index: -1;
-  animation: slide 8s linear 0s infinite;
-  overflow: hidden;
-}
-
-.two {
-  margin-left: -5vw;
-  animation: slide-two 8s linear 4s infinite;
-  overflow: hidden;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
-}
-@keyframes slide-two {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(105vw);
-  }
-}
     </style>
 </head>
 
 <body class="Pointer">
-
+    
        <!-- loader -->
        <div class="loader-1" id="loader-1" >
 
@@ -145,8 +113,8 @@
                         <a href="Testimonial.html" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Testimonial</a>
                     </li>
 
-                    <li class="nav__item ">
-                        <a href="Services.html" class="nav__link"><i
+                    <li class="nav__item">
+                        <a href="Services.css" class="nav__link"><i
                                 class="uil uil-briefcase-alt nav__icon"></i>Services</a>
                     </li>
 
@@ -155,11 +123,11 @@
                 </li> -->
 
 
-                    <li class="nav__item active">
+                    <li class="nav__item ">
                         <a href="portfolio.html" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio</a>
                     </li>
 
-                    <li class="nav__item">
+                    <li class="nav__item active">
                         <a href="Contact.html" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact Me</a>
                     </li>
                 </ul-1>
@@ -178,10 +146,10 @@
         <a href="index.html"><img src="images/logo.png" class="logo"></a>
         <ul class="muji">
             <li><a href="About.html" >About</a></li>
-            <li><a href="portfolio.html" class="active">Portfolio</a></li>
-            <li><a href="Services.html" >Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="Services.html">Services</a></li>
             <li><a href="Testimonial.html">Testimonial</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
         </ul>
         <a href="GETSTARTED.HTML"><button-main class="btn-main muji-1" type="button-main">
             <strong>Get Started</strong>
@@ -199,157 +167,81 @@
     <!--  -->
 
 
-   <!-- PORTFOLIO PAGE -->
-   <section-port class="portfolio-port section-port">
-    <!-- <div class="line"></div>
-<div class="line two"></div> -->
-    <div class="container-port" >
-        <div class="top-side-port">
-            <h4 class="title-port"><button-title class="btn-title">MY WORKS
-            </button-title></h4>
-            <h2><span style="color:aqua;">POR</span>TFOL<span style="color:aqua;">IO</span></h2>
-        </div>
-
-        <div class="filters-port">
-            <ul>
-                <li class="active" data-filter="*">All</li>
-                <li data-filter=".website-design">WEB DESIGNS</li>
-                <li data-filter=".wordpress">WORDPESS SITE</li>
-                <li data-filter=".SEO">S.E.O</li>
-                <li data-filter=".personal">Personal Portfolio</li>
-            </ul>
-        </div>
-
-        <div class="filters-content-port">
-            <div class="row-port grid-port">
-                <div class="row-p  all website-design wordpress wow fadeInDown " data-wow-delay="0.1s">
-                    <img src="images/portfolio-main.JPEG">
-                    <div class="layer">
-                        <h5>Visual Design</h5>
-                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="row-p all website-design  SEO wow fadeInDown" data-wow-delay="0.1s">
-                    <img src="images/coming.JPEG">
-                    <div class="layer">
-                        <h5>Visual Design</h5>
-                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="row-p  all wordpress personal  wow fadeInDown" data-wow-delay="0.1s">
-                    <img src="images/cumming.JPEG">
-                    <div class="layer">
-                        <h5>Visual Design</h5>
-                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="row-p  all  corporate SEO wow fadeInDown" data-wow-delay="0.1s">
-                    <img src="images/comming-soon4.JPEG">
-                    <div class="layer">
-                        <h5>Visual Design</h5>
-                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="row-p  all corporate personal SEO wordpress wow fadeInDown " data-wow-delay="0.1s">
-                    <img src="images/comming5.JPEG">
-                    <div class="layer">
-                        <h5>Visual Design</h5>
-                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="row-p all personal  wow fadeInDown" data-wow-delay="0.1s">
-                    <img src="images/comming-soon4.JPEG">
-                    <div class="layer">
-                        <h5>Visual Design</h5>
-                        <p>Portfolio's Will soon be added once i will be start gettinf Clints . XD</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-
-
-
-
-            </div>
-        </div>
-
-    </div>
-</section-port>
-
-
 
     <!-- contact me  -->
     <!-- ----------------Contact section---------- -->
-    <section-c>
-        <div class="container-c animated">
-            <div class="contactInfo wow fadeInUp" data-wow-delay="1.5s">
-                <div>
-                    <h2>Contact Info</h2>
-                    <ul-c class="info">
-                        <li-c>
-                            <span-3><img src="images/location.png" alt=""></span-3>
-                            <span-3>Thamel , Kathmandu <br>
-                                Nepal</span-3>
-                        </li-c>
-                        <li-c>
-                            <span-3><img src="images/mail.png" alt=""></span-3>
-                            <span-3>Suraz7.21@proton.me</span-3>
-                        </li-c>
-                        <li-c>
-                            <span-3><img src="images/call.png" alt=""></span-3>
-                            <span-3>+977 9818799908</span-3>
-                        </li-c>
-                    </ul-c>
-                </div>
-                <ul-c class="sci wow fadeInUp">
-                    <li-c><a href="#"><img src="images/1.png" alt=""></a></li-c>
-                    <li-c><a href="#"><img src="images/2.png" alt=""></a></li-c>
-                    <li-c><a href="#"><img src="images/3.png" alt=""></a></li-c>
-                    <li-c><a href="#"><img src="images/4.png" alt=""></a></li-c>
-                    <li-c><a href="#"><img src="images/5.png" alt=""></a></li-c>
-                </ul-c>
-            </div>
-            <div class="contactForm wow fadeInUp">
-                <h2 class="wow fadeInLeft" data-wow-delay="0.3s">Send a Message</h2>
-                <div class="formBox">
-                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                        <input type="text" required>
-                        <span-3>First Name</span-3>
-                    </div>
-                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                        <input type="text" required>
-                        <span-3>Last Name</span-3>
-                    </div>
-                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                        <input type="email" required>
-                        <span-3>Email Address</span-3>
-                    </div>
-                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
-                        <input type="text" required>
-                        <span-3>Mobile Number</span-3>
-                    </div>
-                    <div class="inputBox w100 wow fadeInLeft" data-wow-delay="0.3s">
-                        <textarea required></textarea>
-                        <span-3>Write your Message here...</span-3>
 
-                        <div class="inputBox w100 wow fadeInUp" data-wow-delay="0.3s">
-                            <input type="submit" value="Send">
-                        </div>
-                    </div>
+    <div class="main-container">
+        <div class="contact-container">
+            <h2>Send me a message</h2>
+            <p>Feel free to get in touch with me with anything related to Web Development or you can just say hi. I will get back to you as soon as possible.</p>
+            <form id="form" action="php/process_form.php" method="post">
+                <div class="wrapper">
+                    <input type="text" placeholder="Your name" />
+                    <div class="gradient-bg"></div>
                 </div>
+                <div class="wrapper">
+                    <input type="email" placeholder="Email address" />
+                    <div class="gradient-bg"></div>
+                </div>
+                <div class="wrapper">
+                    <input type="text" placeholder="Subject">
+                    <div class="gradient-bg"></div>
+                </div>
+                <div class="wrapper">
+                    <label for="service">Select a service:</label>
+                    <select id="service" name="service">
+                        <option value="website-design">Website Design</option>
+                        <option value="seo">SEO</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="wrapper wrapper-big">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="gradient-bg"></div>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- SOCIAL PANEL HTML -->
+        <div class="social-panel-container">
+            <div class="social-panel">
+
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+                <h4>Get in touch on</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.patreon.com/florinpop17" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/florinpop1705" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/florinpop17" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/florinpop17" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section-c>
+        <button class="floating-btn">Get in Touch</button>
+
+    </div>
 
 
     <!-- footer -->
@@ -403,7 +295,8 @@
         </div>
     </footer>
 
-    <!-- Loader -->
+
+
     <!-- cursor -->
     <div class="cursor"></div>
     <div class="cursor2"></div>
@@ -418,12 +311,13 @@
             cursor2.style.left = e.clientX + "px";
             cursor2.style.top = e.clientY + "px";
         });
+
+        document.addEventListener("DOMContentLoaded", function() {
+  // Hide the loader when the DOM is fully loaded
+  document.getElementById("loader-1").style.display = "none";
+});
+
     </script>
-    <script>document.addEventListener("DOMContentLoaded", function() {
-        // Hide the loader when the DOM is fully loaded
-        document.getElementById("loader-1").style.display = "none";
-      });
-      </script>
 
     <!-- icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -554,33 +448,30 @@
     </script>
     <script>
         new WOW().init();
+        const form = document.getElementById('form');
+const container = document.querySelector('.contact-container');
+
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+	container.innerHTML = '<p>Thanks for your message. <br /> I\'ll get back to you soon. 😃</p>';
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
     </script>
 
     <!-- for fadein -->
     <script src="script.js" defer></script>
-
-    <!-- PORTFOLIO -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-    <script>
-        $('.filters-port ul li').click(function () {
-            $('.filters-port ul li').removeClass('active');
-            $(this).addClass('active');
-
-            var data = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: data
-            })
-        });
-
-        var $grid = $(".grid-port").isotope({
-            itemSelector: ".all",
-            percentPosition: true,
-            masonry: {
-                columnWidth: ".all"
-            }
-        })</script>
 
 </body>
 
