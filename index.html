@@ -208,7 +208,7 @@
                     <h3>I'm a <span-2></span-2></h3>
 
                     <div class="city content">
-                        <a-1 href=""><button-main2>
+                        <a-1 href=""><button-main2 id="playbtn-1">
                                 <svg class="layer-main2" viewBox="0 0 734.93 1135.91">
                                     <defs></defs>
                                     <path class="cls-1"
@@ -230,9 +230,11 @@
                                         d="M441.92,825.09H294.58c2.79-1.57,5.79-1.07,8.79-1.07q65.43-.09,130.86,0C436.77,824,439.51,823.52,441.92,825.09Z"
                                         transform="translate(-0.03)"></path>
                                 </svg>
-                                <p style="font-size: 15px;">Read More &#x27F6;</p>
+                                <p style="font-size: 15px;">Read More &#x27F6;</p> 
                             </button-main2></a-1>
-                        <a-1 href=""><button-main2 class="main3">
+                            <audio src="music/hover-sound.mp3" controls id="myAudio"></audio>
+
+                        <a-1 href=""><button-main2 class="main3" id="playbtn-1">
                                 <svg class="layer-main2" version="1.1" id="Layer_1" text-rendering="geometricPrecision"
                                     shape-rendering="geometricPrecision" image-rendering="optimizeQuality"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -991,11 +993,11 @@
                         </li-c>
                         <li-c>
                             <span-3><img src="images/mail.png" alt=""></span-3>
-                            <span-3>Suraz7.21@proton.me</span-3>
+                           <a href="mailto:Suraz7.21@proton.me"> <span-3>Suraz7.21@proton.me</span-3></a>
                         </li-c>
                         <li-c>
                             <span-3><img src="images/call.png" alt=""></span-3>
-                            <span-3>+977 9818799908</span-3>
+                            <a href="tel:+9779818799908"><span-3>+977 9818799908</span-3></a>
                         </li-c>
                     </ul-c>
                 </div>
@@ -1154,6 +1156,7 @@
         });
     </script>
     <script type="text/javascript">
+
         var bg = document.getElementById("background");
         bg.volume = 0.05;
         const music = document.getElementById("music");
@@ -1169,6 +1172,23 @@
             icon.style.display = 'none';
             music.style.display = 'block';
         } 
+
+// another music for hover
+
+let sound = document.getElementById("myAudio");
+        // hide sound bar
+        sound.style.display = "none";
+
+
+let playControllerr = document.getElementById("playbtn-1");
+
+playControllerr.addEventListener("mouseenter", function () {
+    sound.play();
+});
+playControllerr.addEventListener("mouseleave", function () {
+    sound.pause();
+});
+
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
