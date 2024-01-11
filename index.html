@@ -208,7 +208,7 @@
                     <h3>I'm a <span-2></span-2></h3>
 
                     <div class="city content">
-                        <a-1 href=""><button-main2 id="playbtn-1">
+                        <a-1 href=""><button-main2 id="playbtn-2">
                                 <svg class="layer-main2" viewBox="0 0 734.93 1135.91">
                                     <defs></defs>
                                     <path class="cls-1"
@@ -1181,11 +1181,18 @@ let sound = document.getElementById("myAudio");
 
 
 let playControllerr = document.getElementById("playbtn-1");
+let playControllerr1 = document.getElementById("playbtn-2");
 
 playControllerr.addEventListener("mouseenter", function () {
     sound.play();
 });
 playControllerr.addEventListener("mouseleave", function () {
+    sound.pause();
+});
+playControllerr1.addEventListener("mouseenter", function () {
+    sound.play();
+});
+playControllerr1.addEventListener("mouseleave", function () {
     sound.pause();
 });
 
