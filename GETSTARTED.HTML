@@ -49,40 +49,7 @@
 <body class="Pointer">
     
        <!-- loader -->
-       <div class="loader-1" id="loader-1" >
-
-  
-        <div class="container-loader center-loader" >
-          <div class="rope-loader center-loader">
-            <div class="legs-loader center-loader">
-              <div class="boot-l-loader"></div>
-              <div class="boot-r-loader"></div>
-            </div>
-            <div class="costume-loader center-loader">
-              <div class="spider-loader">
-                <div class="s1-loader center-loader"></div>
-                <div class="s2-loader center-loader"></div>
-                <div class="s3-loader"></div>
-                <div class="s4-loader"></div>
-              </div>
-              <div class="belt-loader center-loader"></div>
-              <div class="hand-r-loader"></div>
-              <div class="hand-l-loader"></div>
-              <div class="neck-loader center-loader"></div>
-              <div class="mask-loader center-loader">
-                <div class="eye-l-loader"></div>
-                <div class="eye-r-loader"></div>
-              </div>
-              <div class="cover-loader center-loader"></div>
-            </div>
-        </div></div>
-        
-        <div class="loader-loader JS_on-loader" >
-        
-            <span class="binary-loader"></span>
-            <span class="binary-loader"></span>
-            <span-loader class="getting-there-loader">LOADING STUFF...</span-loader></div>
-            </div>
+    
 
             <!-- loader end -->
     <div>
@@ -312,11 +279,6 @@
             cursor2.style.top = e.clientY + "px";
         });
 
-        document.addEventListener("DOMContentLoaded", function() {
-  // Hide the loader when the DOM is fully loaded
-  document.getElementById("loader-1").style.display = "none";
-});
-
     </script>
 
     <!-- icon -->
@@ -452,10 +414,25 @@
 const container = document.querySelector('.contact-container');
 
 form.addEventListener('submit', (e) => {
-	e.preventDefault();
-	container.innerHTML = '<p>Thanks for your message. <br /> I\'ll get back to you soon. 😃</p>';
-});
+    e.preventDefault();
 
+    // Collect form data
+    const formData = new FormData(form);
+
+    // Make an AJAX request to your PHP script
+    fetch('process_form.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json()) // Assuming your PHP script returns JSON
+            .then(data => {
+                console.log('Form submitted successfully:', data);
+                // No need to handle redirection in JavaScript
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+            });
+        });
 // SOCIAL PANEL JS
 const floating_btn = document.querySelector('.floating-btn');
 const close_btn = document.querySelector('.close-btn');

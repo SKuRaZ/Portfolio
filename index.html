@@ -45,53 +45,17 @@
             width: 100vw;
             height: 100vh;
             z-index: 0;
-            /* Adjust the z-index to control the canvas display */
+    
         }
 
-        /* 
-    #content {
-      z-index: 0;
-    } */
+
     </style>
 </head>
 
 <body class="Pointer">
 
    <!-- loader -->
-   <div class="loader-1" id="loader-1" >
-
   
-    <div class="container-loader center-loader" >
-      <div class="rope-loader center-loader">
-        <div class="legs-loader center-loader">
-          <div class="boot-l-loader"></div>
-          <div class="boot-r-loader"></div>
-        </div>
-        <div class="costume-loader center-loader">
-          <div class="spider-loader">
-            <div class="s1-loader center-loader"></div>
-            <div class="s2-loader center-loader"></div>
-            <div class="s3-loader"></div>
-            <div class="s4-loader"></div>
-          </div>
-          <div class="belt-loader center-loader"></div>
-          <div class="hand-r-loader"></div>
-          <div class="hand-l-loader"></div>
-          <div class="neck-loader center-loader"></div>
-          <div class="mask-loader center-loader">
-            <div class="eye-l-loader"></div>
-            <div class="eye-r-loader"></div>
-          </div>
-          <div class="cover-loader center-loader"></div>
-        </div>
-    </div></div>
-    
-    <div class="loader-loader JS_on-loader" >
-    
-        <span class="binary-loader"></span>
-        <span class="binary-loader"></span>
-        <span-loader class="getting-there-loader">LOADING STUFF...</span-loader></div>
-        </div>
 
         <!-- loader end -->
       
@@ -232,7 +196,10 @@
                                 </svg>
                                 <p style="font-size: 15px;">Read More &#x27F6;</p> 
                             </button-main2></a-1>
-                            <audio src="music/hover-sound.mp3" controls id="myAudio"></audio>
+                            <audio src="music/rickrole.mp3" controls id="myAudio"></audio>
+                            <audio src="music/OH MY GOD Sound Effect.mp3" controls id="myAudio1"></audio>
+                            <audio src="music/Anime wow - sound effect (free to use).mp3" controls id="myAudio2"></audio>
+                            <audio src="music/UwU - SOUND EFFECT.mp3" controls id="myAudio3"></audio>
 
                         <a-1 href=""><button-main2 class="main3" id="playbtn-1">
                                 <svg class="layer-main2" version="1.1" id="Layer_1" text-rendering="geometricPrecision"
@@ -350,7 +317,7 @@
                 <div class="social-icons content">
                     <a href="https://instagram.com/s.kuraz_7?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank">
                         <button class="Btn-2">
-                            <button class="Btn-2">
+                            <button class="Btn-2" id="playbtn-3">
                                 <span class="svgContainer-2">
                                     <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +330,7 @@
                             </button>
                     </a>
                     <a href="https://github.com/SKuRaZ" target="_blank">
-                        <button class="Btn-1">
+                        <button class="Btn-1" id="playbtn-4">
                             <span class="svgContainer">
                                 <svg fill="white" viewBox="0 0 496 512" height="1.6em">
                                     <path
@@ -375,7 +342,7 @@
                         </button>
                     </a>
                     <a href="" target="_blank">
-                        <button class="Btn-3">
+                        <button class="Btn-3" id="playbtn-5">
                             <span class="svgContainer-3">
                                 <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
@@ -1112,11 +1079,7 @@
 
     </script>
 
-    <script>document.addEventListener("DOMContentLoaded", function() {
-        // Hide the loader when the DOM is fully loaded
-        document.getElementById("loader-1").style.display = "none";
-      });
-      </script>
+
 
     <!-- icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -1194,6 +1157,39 @@ playControllerr1.addEventListener("mouseenter", function () {
 });
 playControllerr1.addEventListener("mouseleave", function () {
     sound.pause();
+});
+
+// social media 
+let sound1 = document.getElementById("myAudio1");
+let sound2 = document.getElementById("myAudio2");
+let sound3 = document.getElementById("myAudio3");
+        // hide sound bar
+        sound1.style.display = "none";
+        sound2.style.display = "none";
+        sound3.style.display = "none";
+
+
+let playControllerr2 = document.getElementById("playbtn-3");
+let playControllerr3 = document.getElementById("playbtn-4");
+let playControllerr4 = document.getElementById("playbtn-5");
+
+playControllerr2.addEventListener("mouseenter", function () {
+    sound1.play();
+});
+playControllerr2.addEventListener("mouseleave", function () {
+    sound1.pause();
+});
+playControllerr3.addEventListener("mouseenter", function () {
+    sound2.play();
+});
+playControllerr3.addEventListener("mouseleave", function () {
+    sound2.pause();
+});
+playControllerr4.addEventListener("mouseenter", function () {
+    sound3.play();
+});
+playControllerr4.addEventListener("mouseleave", function () {
+    sound3.pause();
 });
 
     </script>
