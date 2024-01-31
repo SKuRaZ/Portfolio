@@ -1,49 +1,464 @@
-<div style="display: flex; align-items: center; justify-content: center; height: 100vh;flex-direction: column;">
-    <H1>COMMING SOON!</H1>
-    <div class="loader"></div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <a href="index.html"><Button style="display: flex; align-items: center; text-align: center; width: 180px; height: 40px; background-color: blueviolet; box-shadow: 6px 6px 6px aquamarine; cursor: pointer;   
-        " class="btnok">
-          <svg class="svg-icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><g stroke="#ff342b" stroke-linecap="round" stroke-width="1.5"><path d="m3.33337 10.8333c0 3.6819 2.98477 6.6667 6.66663 6.6667 3.682 0 6.6667-2.9848 6.6667-6.6667 0-3.68188-2.9847-6.66664-6.6667-6.66664-1.29938 0-2.51191.37174-3.5371 1.01468"></path><path d="m7.69867 1.58163-1.44987 3.28435c-.18587.42104.00478.91303.42582 1.0989l3.28438 1.44986"></path></g></svg>GO BACK TO HOME PAGE</Button></a>
-        <style>
-           .btnok:hover {
-            -webkit-box-reflect: below 10px ;
-           }
-           .loader {
-  display: block;
-  --height-of-loader: 4px;
-  --loader-color: #0071e2;
-  width: 130px;
-  height: var(--height-of-loader);
-  border-radius: 30px;
-  background-color: rgba(0,0,0,0.2);
-  position: relative;
-  margin:20px 20px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.KuRaZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pointer.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="mobile_nav.css">
+    <link rel="stylesheet" href="Services.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="whyme.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="testi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-.loader::before {
-  content: "";
-  position: absolute;
-  background: var(--loader-color);
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  border-radius: 30px;
-  animation: moving 1s ease-in-out infinite;
-  ;
-}
 
-@keyframes moving {
-  50% {
-    width: 100%;
-  }
+    <!-- <a href="https://www.flaticon.com/free-icons/time" title="time icons">Time icons created by Freepik - Flaticon</a> -->
+    <link rel="stylesheet" href="hireme.css">
+    <link rel="icon" type="image/x-icon" href="images/fav.ico">
 
-  100% {
-    width: 0;
-    right: 0;
-    left: unset;
-  }
-}
-        </style>
-</div>
+    <style>
+        .nav-another {
+            width: 100%;
+            height: auto;
+            background: linear-gradient(45deg, #a700ff, #4d19db);
+            background-size: auto;
+            background-position: center;
+            padding: 0 8%;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+
+<body class="Pointer">
+    <div>
+        <audio src="On-My-Way.mp3" id="background" loop="" autoplay="true"></audio>
+
+        <button-m id="icon-m" onclick="pause()" class="btn-m" type="button-m">
+            <i class="fa-solid fa-music"></i>
+        </button-m>
+        <button-m id="music" onclick="play()" class="btn-m" type="button-m">
+            <i class="fa-solid fa-music"></i>
+        </button-m>
+    </div>
+    <header class="header" id="header">
+        <nav-1 class="nav-1 container">
+
+            <img src="images/logo.png" class="nav__logo">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul-1 class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a>
+                    </li>
+                    <li class="nav__item ">
+                        <a href="About.html" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="Testimonial.html" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Testimonial</a>
+                    </li>
+
+                    <li class="nav__item active">
+                        <a href="Services.html" class="nav__link"><i
+                                class="uil uil-briefcase-alt nav__icon"></i>Services</a>
+                    </li>
+
+                    <!-- <li class="nav__item">
+                    <a href="#" class="nav__link"><i class="uil uil-scenery nav__icon">Portfolio</i></a>
+                </li> -->
+
+
+                    <li class="nav__item">
+                        <a href="portfolio.html"class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="Contact.html" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact Me</a>
+                    </li>
+                </ul-1>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav-1>
+
+
+    </header>
+    <nav class="nav-another">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <ul class="muji">
+            <li><a href="About.html" >About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="Services.html" class="active">Services</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <a href="GETSTARTED.HTML"><button-main class="btn-main muji-1" type="button-main">
+            <strong>Get Started</strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+                <div class="circle-main"></div>
+                <div class="circle-main"></div>
+            </div>
+        </button-main></a>    </nav>
+
+
+    <!--  -->
+
+  <!-- start of services -->
+  <section-Service1 class="container-Service1">
+    <div class="top-side-port">
+        <h4 class="title-port"><button-title class="btn-title">Services
+        </button-title></h4>
+        <!-- <h2 class="service-title"><span style="color:aqua;">SER</span>VIC<span style="color:aqua;">ES</span></h2> -->
+    </div>
+
+    <section-Service1 class="card__container-Service1">
+
+        <div class="card__bx-Service1" style="--clr: #0c5c1f">
+            <div class="serviceBox-Service1 ">
+                <div class="icon-Service1" style="--i: #cd57ff">
+                    <i class="fa-solid fa-paintbrush"></i>
+                </div>
+                <div class="card__data-Service1">
+                    <div class="card__icon-Service1">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <div class="card__content-Service1">
+                        <h3>Designing</h3>
+                        <p>Elevate brands through captivating, creative, and visually stunning design.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card__bx-Service1" style="--clr: #eb5ae5">
+            <div class="serviceBox-Service1">
+                <div class="icon-Service1" style="--i: #4eb7ff">
+                    <i class=" fa-solid fa-code"></i>
+                  </div>
+                <div class="card__data-Service1">
+                    <div class="card__icon-Service1">
+                      <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="card__content-Service1">
+                      <h3>Develoment</h3>
+                      <p>Creating powerful and efficient web solutions with cutting-edge technologies.</p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="card__bx-Service1" style="--clr: #015a91">
+            <div class="serviceBox-Service1">
+                <div class="icon-Service1" style="--i: #43f390">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="card__data-Service1">
+                    <div class="card__icon-Service1">
+                      <i class="fa-brands fa-searchengin"></i>
+                    </div>
+                    <div class="card__content-Service1">
+                      <h3>SEO</h3>
+                      <p>Optimizing websites for search engines to boost visibility and traffic.</p>
+                      <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/triangle-left.png" class="triangle3">
+
+    </section-Service1>
+</section-Service1>
+
+    <!-- contact me  -->
+    <!-- ----------------Contact section---------- -->
+    <section-c>
+        <div class="container-c animated">
+            <div class="contactInfo wow fadeInUp" data-wow-delay="1.5s">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul-c class="info">
+                        <li-c>
+                            <span-3><img src="images/location.png" alt=""></span-3>
+                            <span-3>Thamel , Kathmandu <br>
+                                Nepal</span-3>
+                        </li-c>
+                        <li-c>
+                            <span-3><img src="images/mail.png" alt=""></span-3>
+                            <span-3>Suraz7.21@proton.me</span-3>
+                        </li-c>
+                        <li-c>
+                            <span-3><img src="images/call.png" alt=""></span-3>
+                            <span-3>+977 9818799908</span-3>
+                        </li-c>
+                    </ul-c>
+                </div>
+                <ul-c class="sci wow fadeInUp">
+                    <li-c><a href="#"><img src="images/1.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/2.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/3.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/4.png" alt=""></a></li-c>
+                    <li-c><a href="#"><img src="images/5.png" alt=""></a></li-c>
+                </ul-c>
+            </div>
+            <div class="contactForm wow fadeInUp">
+                <h2 class="wow fadeInLeft" data-wow-delay="0.3s">Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="text" required>
+                        <span-3>First Name</span-3>
+                    </div>
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="text" required>
+                        <span-3>Last Name</span-3>
+                    </div>
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="email" required>
+                        <span-3>Email Address</span-3>
+                    </div>
+                    <div class="inputBox w50 wow fadeInLeft" data-wow-delay="0.3s">
+                        <input type="text" required>
+                        <span-3>Mobile Number</span-3>
+                    </div>
+                    <div class="inputBox w100 wow fadeInLeft" data-wow-delay="0.3s">
+                        <textarea required></textarea>
+                        <span-3>Write your Message here...</span-3>
+
+                        <div class="inputBox w100 wow fadeInUp" data-wow-delay="0.3s">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-c>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container-f">
+            <div class="row-f">
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>S.KuRaZ</h4>
+                    <ul-f>
+
+                        <li-f><a href="index.html">Home</a></li-f>
+                        <li-f><a href="About.html">about me</a></li-f>
+                        <li-f><a href="#">Portfolio</a></li-f>
+                        <li-f><a href="#">Services</a></li-f>
+                        <li-f><a href="#">Testimonial</a></li-f>
+                    </ul-f>
+                </div>
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>Process</h4>
+                    <ul-f>
+                        <li-f><a href="#">Get A Quote</a></li-f>
+                        <li-f><a href="#">Talk to me</a></li-f>
+                        <li-f><a href="#">Express your idea</a></li-f>
+                        <li-f><a href="#">Get your website </a></li-f>
+                    </ul-f>
+                </div>
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>Offers</h4>
+                    <ul-f>
+                        <li-f><a href="#">Website</a></li-f>
+                        <li-f><a href="#">E-commerce</a></li-f>
+                        <li-f><a href="#">Static</a></li-f>
+                        <li-f><a href="#">Graphic Design</a></li-f>
+                    </ul-f>
+                </div>
+                <div class="footer-col animated wow fadeInUp" data-wow-delay="0.1s
+            ">
+                    <h4>follow me</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+            cursor2.style.left = e.clientX + "px";
+            cursor2.style.top = e.clientY + "px";
+        });
+    </script>
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- java script for nav mobilr -->
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const navMenu = document.getElementById('nav-menu');
+            const navToggle = document.getElementById('nav-toggle');
+            const navClose = document.getElementById('nav-close');
+
+            // Show menu
+            if (navToggle) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.add('show-menu');
+                });
+            }
+
+            // Hide menu
+            if (navClose) {
+                navClose.addEventListener('click', () => {
+                    navMenu.classList.remove('show-menu');
+                });
+            }
+
+            const navLink = document.querySelectorAll('.nav__link');
+
+            function linkAction() {
+                navMenu.classList.remove('show-menu');
+            }
+
+            navLink.forEach(n => n.addEventListener('click', linkAction));
+        });
+    </script>
+    <script type="text/javascript">
+        var bg = document.getElementById("background");
+        bg.volume = 0.05;
+        const music = document.getElementById("music");
+        const icon = document.getElementById("icon-m");
+
+        function play() {
+            bg.play();
+            icon.style.display = 'block';
+            music.style.display = 'none';
+        }
+        function pause() {
+            bg.pause();
+            icon.style.display = 'none';
+            music.style.display = 'block';
+        } 
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        wow = new WOW();
+        wow.init();
+        $(document).ready(function (e) {
+
+            $('#video-icon').on('click', function (e) {
+                e.preventDefault();
+                $('.video-popup').css('display', 'flex');
+                $('.iframe-src').slideDown();
+            });
+            $('.video-popup').on('click', function (e) {
+                var $target = e.target.nodeName;
+                var video_src = $(this).find('iframe').attr('src');
+                if ($target != 'IFRAME') {
+                    $('.video-popup').fadeOut();
+                    $('.iframe-src').slideUp();
+                    $('.video-popup iframe').attr('src', " ");
+                    $('.video-popup iframe').attr('src', video_src);
+                }
+            });
+
+            $('.slider').bxSlider({
+                pager: false
+            });
+        });
+
+        $(window).on("scroll", function () {
+
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+        });
+        $(window).on("load", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo-white.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+            $.scrollIt({
+
+                easing: 'swing',      // the easing function for animation
+                scrollTime: 900,       // how long (in ms) the animation takes
+                activeClass: 'active', // class given to the active nav element
+                onPageChange: null,    // function(pageIndex) that is called when page is changed
+                topOffset: -63
+            });
+        });
+
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- for fadein -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
